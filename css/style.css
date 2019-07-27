@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
+
+/* global styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p, blockquote {
+    font-size: .9em;
+    line-height: 1.5em;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* element wise styling */
+
+.container {
+    text-align: center;
+    padding: .8em;
+}
+
+/* we can use flex or float, but flex is better */
+
+/* .logo {
+    float: left;
+}
+
+nav {
+    float: right;
+} */
+
+.logo {
+    width: 70px;
+    height: 40px;
+}
+
+.menu {
+    width: 20px;
+    margin-top: 30%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hideMobile {
+    display: none;
+}
+
+.rubics {
+    width: 20%;
+    margin: 4vh 4vw;
+}
+
+.heading, .subHeading {
+    position: relative;
+    z-index: 3;
+}
+
+.blue-container {
+    background-color: #00c2ff;
+    width: 100%;
+     border-top-left-radius: 40px; 
+    transform: skewY(-2deg);
+}
+
+.blue-container ul {
+    transform: skewY(2deg);  
+}
+
+/* right side radius part */
+
+.blue-container:before {
+   content: ""; 
+   width: 40px;
+   height: 40px;
+   background-color: #00c2ff;
+   position: absolute;
+   z-index: -2;
+   top: -40px;
+   right: 0;
+}
+
+.blue-container:after {
+    content: ""; 
+    width: 90px;
+    height: 60px;
+    background-color: #ffff;
+    position: absolute;
+    z-index: -1;
+    top: -60px;
+    right: -2px;
+    border-radius: 50%;
+ }
+
+ .blue-container img {
+     width: 20%;
+ }
+
+ .blue-container ul li {
+     padding-bottom: 1em;
+ }
