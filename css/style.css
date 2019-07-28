@@ -18,6 +18,20 @@ ul {
     padding: 0;
 }
 
+figure {
+    margin: 0;
+    padding: 0; 
+}
+
+figcaption {
+    font-weight: bold;
+    color: #00c2ff;
+}
+
+h2 {
+    margin-top: 1.5em;
+}
+
 /* element wise styling */
 
 .container {
@@ -107,3 +121,78 @@ header {
  .blue-container ul li {
      padding-bottom: 1em;
  }
+
+ .grey-container {
+     background-color: #e9e9e9;
+     transform: skewY(-2deg)
+ }
+
+ .grey-container ul {
+    transform: skewY(2deg)
+ }
+
+ .grey-container img {
+     width: 30%;
+     border-radius: 50%;
+ }
+
+ .grey-container ul li:first-child{
+     margin: 2em 0 2.5em 0;
+ }
+
+ .grey-container ul li:last-child{ 
+    margin-bottom: 2em;
+ }
+
+ .joinBtn {
+     display: block;
+     width: calc(100%-1em);
+     background-color: #00c2ff;
+     border-radius: 20px;
+     padding: .7em;
+     text-decoration: none;
+     margin-top: 1.5em;
+     position: relative;
+     z-index: 3;
+
+ }
+
+ .footer-container {
+     width: 100%;
+     background-color: #3d444a;
+     color: whitesmoke;
+     transform: skewY(-2deg);
+     margin-top: 2em;
+     padding-top: 3em;
+     padding-bottom: 2em;
+     
+ }
+
+ .footer-container img {
+     width: 90px;
+     border-radius: 15%;
+ }
+
+ .footer-container .container {
+
+    transform: skewY(2deg);
+ }
+
+ .footer-links {
+     margin-top: 2em;
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .footer-links li a {
+     color: #9d9d9d;
+     text-decoration: none;
+     font-size: .8em;
+ }
+
+
+ 
+
+
+
+ 
